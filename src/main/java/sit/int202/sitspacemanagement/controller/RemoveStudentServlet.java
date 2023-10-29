@@ -23,5 +23,6 @@ public class RemoveStudentServlet extends HttpServlet {
             System.out.println("Can't find student repository");
         }
         studentRepository.removeStudentById(removeId);
+        resp.sendRedirect("addRemoveStudent.jsp");
     }
 }
