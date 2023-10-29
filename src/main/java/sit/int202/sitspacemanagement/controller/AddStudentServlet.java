@@ -25,6 +25,8 @@ public class AddStudentServlet extends HttpServlet {
             studentRepository = new StudentRepository();
         }
         studentRepository.addStudent(student);
+        //update session
+        session.setAttribute("repo", studentRepository);
         resp.sendRedirect("addRemoveStudent.jsp");
     }
 

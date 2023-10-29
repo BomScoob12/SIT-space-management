@@ -35,12 +35,12 @@
     <td>Score</td>
     <td>Grade</td>
     </tr>
-    <c:forEach items="${sessionScope.studentWithGrade.entrySet()}" var="student" varStatus="ct">
+    <c:forEach items="${sessionScope.repo.getStudentList()}" var="student" varStatus="ct">
         <tr>
-            <td>${student.key.getId()}</td>
-            <td>${student.key.getName()}</td>
-            <td>${student.key.getScore()}</td>
-            <td>${student.value}</td>
+            <td>${student.getId()}</td>
+            <td>${student.getName()}</td>
+            <td>${student.getScore()}</td>
+            <td>${student.getGrade()}</td>
         </tr>
     </c:forEach>
 </table>
