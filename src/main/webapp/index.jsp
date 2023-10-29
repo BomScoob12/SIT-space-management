@@ -5,8 +5,6 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<%
-    response.sendRedirect("addRemoveStudent.jsp");
-%>
+<a href="addRemoveStudent.jsp">Go to student management</a>
 </body>
 </html>

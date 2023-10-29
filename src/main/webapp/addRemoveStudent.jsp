@@ -18,7 +18,7 @@
 </div>
 <div class="add-student-data">
     <h2>Adding new student</h2>
-    <form action="student-management" method="post">
+    <form action="add-student" method="post">
         <label for="std-id">ID:</label><input type="text" name="studentId" id="std-id"> <br>
         <label for="std-name">Name:</label><input type="text" name="studentName" id="std-name"> <br>
         <label for="std-score">Score:</label> <input type="text" name="studentScore" id="std-score"> <br>
@@ -26,7 +26,7 @@
     </form>
 </div>
 <div class="remove-student">
-    <form action="student-management" method="get">
+    <form action="remove-student" method="get">
         <label for="remove-id"> ID:</label><input type="text" name="removeId" id="remove-id">
         <input type="submit" name="remove" value="Remove Student">
     </form>
